@@ -20,3 +20,19 @@ aside {
   flex: 1;
   overflow-y: auto;
 }
+
+/* Media Query for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+
+  main {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+
+  article,
+  aside {
+    flex: auto; /* Allow both to grow and shrink equally */
+  }
+}
